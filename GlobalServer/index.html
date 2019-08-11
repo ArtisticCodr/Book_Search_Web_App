@@ -1,0 +1,67 @@
+<?php
+session_start();
+?>
+<html ng-app="index">
+    <head>
+        <meta charset="utf-8">
+            <title>
+                Biblioteka
+            </title>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js">
+            </script>
+            <script src="index.js" type="text/javascript">
+            </script>
+            <style>
+                [ng\:cloak], [ng-cloak], .ng-cloak {
+	display: none;
+}
+#table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+#rows {
+	border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: left;
+}
+#session{
+	position: fixed;
+	top: 10px;
+	right: 10px;
+}
+            </style>
+        </meta>
+    </head>
+    <body id="html" ng-controller="CtrlIndex" ng-hide="hide" ng-init="hide=true">
+        <button id="session" onclick="location.href='http://hadziserver.ddns.net:8080/globalserver/session.html'">
+            Session
+        </button>
+        <br>
+            <div class="upit">
+            </div>
+            <table align="center">
+                <tr>
+                    <td>
+                        <button align="center" ng-click="add()">
+                            Add
+                        </button>
+                    </td>
+                    <td>
+                        <button align="center" ng-click="search()">
+                            Search
+                        </button>
+                    </td>
+                </tr>
+            </table>
+            <br>
+                <br>
+                    <br>
+                        <div align="center" class="searchResult">
+                        </div>
+                    </br>
+                </br>
+            </br>
+        </br>
+    </body>
+</html>
