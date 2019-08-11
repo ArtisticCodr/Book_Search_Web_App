@@ -25,8 +25,8 @@ next, for example mapping TI-200a means that the de string entered in the TI pre
 The php part represents the backend of this project
 
 
-# JavaScript
-The javascript part represents the frontend of this project
+# JavaScript/HTML
+The javascript and html part represents the frontend of this project
 
 # Note
 This Project was written as a part of the course "Script Languages" at The Faculty Of Computer Science in Belgrade
